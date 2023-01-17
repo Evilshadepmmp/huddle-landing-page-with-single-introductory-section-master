@@ -1,0 +1,136 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    /* Headings */
+    --font-Poppins: 'Poppins', sans-serif;
+        /* Body */
+    --font-OpenSans: 'Open Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-image: url(/img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Violet);
+    font-family: var(--font-OpenSans);
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 100vh;
+}
+.main{
+    background-image: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: top 30px left 30px;
+    background-size: 120px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+.text1{
+    font-family: var(--font-Poppins);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0 50px;
+}
+.text2{
+    font-family: var(--font-OpenSans);
+    padding: 0 40px;
+    font-weight: 400;
+}
+.div__img{
+padding-top: 60px;
+display: flex;
+justify-content: center;
+}
+.fondo{
+    margin-top: 50px;
+    height: 220px;
+}
+.btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.boton{
+    text-decoration: none;
+    font-family: var(--font-OpenSans);
+    background-color: white;
+    padding: 8px 72px;
+    border-radius: 20px;
+}
+.boton:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
+    transition: .2s;
+}
+.div__redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.redes1,
+.redes2,
+.redes3{
+    margin: 6px;
+    width: 25px;
+    padding: 5px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.footer{
+    margin-top: 40px;
+}
+@media (min-width: 768px) {
+    body{
+         width: 1440px;
+         background-image: url(/img/bg-desktop.svg);
+         background-repeat: no-repeat;
+         background-size: contain; 
+    }
+    .main{
+        background-position: top 30px left 30px;
+        background-size: 150px;
+        width: 95%;
+    }
+    .main_container{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .fondo{
+        height: 500px;
+    }
+    .text{
+        text-align: start;
+    }
+    .btn{
+        text-align: start;
+        margin-left: 40px;
+    }
+    .boton{
+        padding: 12px 50px;
+    }
+    .div__redes{
+       justify-content: flex-end;
+    }
+}
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(0, 0%, 100%); 
+}
